@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+opencv-python = "*"
+numpy = "*"
+matplotlib = "*"
+ipykernel = "*"
+segmentation-models = "*"
+tensorflow = ">=1.1.13"
+keras-applications = "<=1.0.8,>=1.0.7"
+image-classifiers = "==1.0.0"
+efficientnet = "==1.0.0"
+scikit-learn = "*"
+pycocotools = "*"
+onnxruntime = "*"
+onnx = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
