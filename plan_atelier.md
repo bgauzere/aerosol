@@ -1,4 +1,4 @@
-# Plan Atelier
+# Plan Atelier
 
 ## Présentation de la problématique de la segmentation 
  * Basé sur des règles : limité pour tout expliciter
@@ -28,5 +28,5 @@
     * https://encord.com/blog/learn-how-to-fine-tune-the-segment-anything-model-sam/
     * https://github.com/bnsreenu/python_for_microscopists/blob/master/331_fine_tune_SAM_mito.ipynb
 
-## Conclusion pour aller plus loin
+## Conclusion pour aller plus loin
  * des données annotées et de la puissance de calcul
