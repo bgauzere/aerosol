@@ -1,15 +1,22 @@
 # Contents
-Code pour faire tourner un modele fondation sur des images quelconques
+Code pour faire tourner un modele fondation sur des images quelconques. Comporte
+également du code pour faire un modèle naïf de segmentation à partir du livre de
+F. Chollet : Deep Learning in Python.
+
 
 # Installation
 
-To run the code, you need : 
+To run the codes, you need : 
  * A set of images in ./Images/
  * the weights of SAM model :
    https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth 
 
-
 The Pipfile is made for CPU usage. 
+
+# Get the EMPS dataset 
+
+To get the EMPS dataset, clone the repository into `emps` folder : 
+`git clone https://github.com/by256/emps.git`
 
 # Run 
 
