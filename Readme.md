@@ -1,3 +1,6 @@
+# Contents
+Code pour faire tourner un modele fondation sur des images quelconques
+
 # Installation
 
 To run the code, you need : 
@@ -19,5 +22,5 @@ The Pipfile is made for CPU usage.
  * Segmentation models : limited to 21 channel image, no clear regions. 
  * Segment Anything : long to compute, but good results. (1m 30 on my CPU for 1 image)
  * https://stardist.net/ : TODO
-* weka : https://github.com/fiji/Trainable_Segmentation : TODO
+ * weka : https://github.com/fiji/Trainable_Segmentation : TODO
  * https://github.com/MouseLand/cellpose  : TODO

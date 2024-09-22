@@ -90,7 +90,7 @@ def seg_unet(ax, image):
 
 # ----------------- Main --------------------------------- #
 if __name__ == '__main__':
-    folder_name = './data/Images/CEA2_MEB'
+    folder_name = './Images/CEA2_MEB'
     image_name = "Image_4_01.tif"
     fig, ax = plt.subplots(1, 1, figsize=(10, 10))
     image = show_image(ax, folder_name, image_name)
