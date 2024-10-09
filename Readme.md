@@ -23,7 +23,7 @@ To get the EMPS dataset, clone the repository into `emps` folder :
 1. Install the venv : `pipenv install` 
 1. Install Segment Anything : `pipenv run python -m pip install   git+https://github.com/facebookresearch/segment-anything.git`
 1. Install the kernel : `pipenv run python -m ipykernel install --name="aerosol"   --userame="aerosol" --user`
- 1. Launch notebooks with `aerosol` jupyter kernel  
+1. Launch notebooks with `aerosol` jupyter kernel  
 
 # Tests
  * Segmentation models : limited to 21 channel image, no clear regions. 
