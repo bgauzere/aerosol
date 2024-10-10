@@ -9,7 +9,8 @@ In this folder, you will find the following notebooks :
 
 # Installation
 
-## Prerequisites
+## Prerequisites
+
 To run the codes, you need : 
  * A set of images to test in ./Images/
  * the weights of SAM model :
@@ -36,16 +37,49 @@ To get the EMPS dataset, clone the repository into `emps` folder :
 
 If your local python configuration fails, you can run the [notebooks on colab](https://drive.google.com/drive/folders/1IbSBKymrI71-HVHzs5j9NkkAQ6qOmiB4?usp=sharing)
 
-## `Segmentation_Watershed.ipynb`
+## Segmentation_Watershed.ipynb
 
-## `Segmentation_Keras.ipynb`
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oPETP8ZGtK15MwJ8Id9dgUicQ4Ag_HXa?usp=sharing)
 
-version colab : 
+This notebook provides an in-depth exploration of image segmentation using the Watershed algorithm. The notebook covers key concepts of the watershed technique, explains the preprocessing steps required for efficient segmentation, and includes practical examples of applying the algorithm to different types of images.
 
-Code pour faire un modèle simple de segmentation. Inspiré et adapté de de
-F. Chollet : Deep Learning in Python.
+The following topics are covered:
+  - Image preprocessing techniques (e.g., grayscale conversion, thresholding, and noise removal)
+  - Marker-based Watershed Segmentation
+  - Visualizations to illustrate intermediate and final results
 
-## `Segmentation_Anything.ipynb` 
-Code pour faire tourner un modele fondation sur des images quelconques. 
+The examples are implemented using OpenCV, NumPy, and Matplotlib, and they demonstrate the capabilities of the Watershed algorithm to segment images.
 
+
+## Segmentation_Keras.ipynb
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1fL-T8icnZgEHnBakr_ClB1yyQR6_q-Lp?usp=sharing)
+
+This notebook presents a step-by-step guide to image segmentation using a deep learning model built with Keras. It provides a practical implementation of segmentation techniques commonly used in medical imaging, satellite imagery, or general computer vision applications.
+
+The notebook includes:
+
+  - An introduction to image segmentation and its applications.
+  -  Loading and preprocessing of image datasets for training and validation.
+  -  Building a convolutional neural network (CNN) using the Keras framework, specifically tailored for segmentation tasks.
+  -  Explanation of model architecture, including commonly used layers such as convolutional, pooling, and upsampling.
+  -  Training the segmentation model, including details on loss functions  and metrics for evaluation.
+  -  Visualizing the model's performance with segmented output images.
+
+This code has been inspired by and adapted from the book "Deep Learning with Python" by François Chollet, the creator of Keras.
+
+## Segmentation_Anything.ipynb
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19Bce8yQdlOCjFMSd98DKklddNNoclwU5?usp=sharing)
+
+
+This notebook explores the Segment Anything Model (SAM) for image segmentation. SAM is a versatile and efficient model designed to perform general-purpose segmentation on a wide range of images with minimal user input. This notebook demonstrates how to leverage SAM for different image segmentation tasks.
+
+Key components of the notebook include:
+
+  - Introduction to the Segment Anything Model (SAM) and its capabilities.
+  - Loading images and preparing them for segmentation.
+  -  Utilizing pre-trained SAM for segmenting various objects within images.
+  -  Visualization of segmentation masks produced by the model.
+  
 
