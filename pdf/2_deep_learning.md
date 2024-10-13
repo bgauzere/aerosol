@@ -252,7 +252,7 @@ A deep learning model is a function that maps an input to an output
 
 $$ f : \mathcal{X} \to \mathcal{Y}$$
 
-- - Example- - 
+**Example** 
 -  The input is an image
 -  The output is a pixel class prediction
 -  The model is parametrized by weights
@@ -263,7 +263,7 @@ $$ f : \mathcal{X} \to \mathcal{Y}$$
 
 ## Learning Process
 
-- Deep Learning models learn by - - minimizing a loss function- - 
+- Deep Learning models learn by **minimizing a loss function**
 - The loss function measures how well the model is performing
 - Weights are updated to minimize the loss function
 - $$ \mathbb{R}^{width \times height} \to \mathbb{R}$$
@@ -275,9 +275,9 @@ $$ f : \mathcal{X} \to \mathcal{Y}$$
 
 ## Learning iteration
 
-- - - Feed Forward- - : Compute the output of the network
-- - - Backpropagation- - : Calculate the gradients
-- - - Optimizer- - : Update the weights
+- **Feed Forward** : Compute the output of the network
+- **Backpropagation** : Calculate the gradients
+- **Optimizer** : Update the weights
 
 ![bg right h:400](figures/learning_cycle.svg)
 
@@ -285,7 +285,7 @@ $$ f : \mathcal{X} \to \mathcal{Y}$$
 
 ## Feed Forward
 
-- - - Feed Forward- -  is the process of computing the output of the network
+- **Feed Forward**  is the process of computing the output of the network
 
 ![fit center](figures/feedforward.svg)
 
@@ -296,7 +296,7 @@ $$ f : \mathcal{X} \to \mathcal{Y}$$
 
 ## Backpropagation
 
-- - - Backpropagation- -  is the process of calculating gradients
+- **Backpropagation** is the process of calculating gradients
 - According to the loss function
 
 ![fit center](figures/backprop.svg)
@@ -314,8 +314,8 @@ $$w_{k+1} \leftarrow w_k - \alpha_k \frac{\partial L(y,\hat{y})}{\partial w_k}$$
 
 
 ### Dynamics of Learning:
-- - - Step Direction- - : Show how the weights are updated iteratively.
-- - - Learning Rate Impact- - : Too high → Oscillation; Too low → Slow convergence.
+- **Step Direction** : Show how the weights are updated iteratively.
+- **Learning Rate Impact** : Too high → Oscillation; Too low → Slow convergence.
 
 
 ---
@@ -327,9 +327,9 @@ $$w_{k+1} \leftarrow w_k - \alpha_k \frac{\partial L(y,\hat{y})}{\partial w_k}$$
 
 ## Key Concepts
 
-1. - - Epochs- - : Number of complete passes through the training dataset
-2. - - Batch Size- - : Number of samples processed before updating the model
-3. - - Learning Rate- - : Controls how much to change the model in response to the estimated error
+1. **Epochs**: Number of complete passes through the training dataset
+2. **Batch Size** : Number of samples processed before updating the model
+3. **Learning Rate** : Controls how much to change the model in response to the estimated error
 
 ![bg right fit](figures/epoch_batch_learning_rate.svg)
 
@@ -337,8 +337,8 @@ $$w_{k+1} \leftarrow w_k - \alpha_k \frac{\partial L(y,\hat{y})}{\partial w_k}$$
 
 ## Summary
 
-- Deep learning requires a - - model- -  and (lot of) - - data- - 
-- Deep Learning relies on a combination of - - loss functions- - , - - optimizers- - , - - backpropagation- - , and key parameters to learn effectively.
+- Deep learning requires a **model**   and (lot of) **data**  
+- Deep Learning relies on a combination of **loss functions**  , **optimizers**  , **backpropagation**  , and key parameters to learn effectively.
 
 --- 
 
@@ -418,6 +418,45 @@ Generally these steps rely on a library (PyTorch, TensorFlow, ...)
 This step may take a long time depending on the ressources, architecture, and data
 
 ---
+
+# Good Practices
+
+## Train/valid/test split
+
+We are interested in the generalization of the model: test it on unseen data to assess its performance. Tune hyperparameters on the validation set.
+
+![w:1024 fit center](figures/datasplit-App-Val-Test.svg)
+
+---
+
+# Good Practices
+
+## Always test a simple baseline
+
+To asses the performance of a model, we need to compare it to a simple baseline. Even random guessing can be a good baseline.
+
+## Learn on representative data
+
+Modern IA is only as good as the data it was trained on. Make sure the data is representative of the task.
+
+--- 
+
+
+# Good Practices
+
+## Check learning curves
+
+Training loss must decrease. 
+
+Validation loss must decrease, then increase.
+
+Best model is the one with the lowest validation loss.![bg right fit](figures/valid_train.png)
+
+[[figure taken from F. Chollet]](https://www.manning.com/books/deep-learning-with-python)
+
+--- 
+
+
 
 # Let's code
 
