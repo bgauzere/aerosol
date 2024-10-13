@@ -24,7 +24,9 @@ The Pipfile is made for CPU usage.
 To get the EMPS dataset, clone the repository into `emps` folder : 
 `git clone https://github.com/by256/emps.git`
 
-## Jupyter notebook configuration 
+## Jupyter notebook configuration 
+
+To install pip on windows environment : [pip installation](https://pip.pypa.io/en/stable/installation/)
 
 1. Install pipenv : `pip install pipenv`
 1. Install the venv : `pipenv install` 
