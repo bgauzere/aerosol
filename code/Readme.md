@@ -4,29 +4,45 @@ In this folder, you will find the following notebooks :
  * `1_Segmentation_Watershed.ipynb`: Code to run a segmentation algorithm without learning a model
  * `2_Segmentation_Keras.ipynb` : Code to implement a segmentation model and learning it by yourself 
  * `3_Segmentation_SAM.ipynb` : Code to run the fundation model SAM to segment images.
+
+This folder contains the uncomplete notebooks. Complete versions are in the `solution`folder.
  
- Their contents are described [below](#tutorials).
+Notebook contents are described [below](#tutorials).
 
 # Installation
 
 ## Prerequisites
 
 To run the codes, you need : 
- * A set of images to test in ./Images/
+ * A set of images to test in ./images_raw/
  * the weights of SAM model :
    https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth 
    Copy the file in the `assets` folder.
+  * The EMPS dataset : To get the EMPS dataset, clone the repository into `emps` folder : 
+`git clone https://github.com/by256/emps.git` or download the zip file from the repository https://github.com/by256/emps and extract it in the `emps` folder.
+
 
 The Pipfile is made for CPU usage. 
 
-## Get the EMPS dataset 
+## Python configuration 
 
-To get the EMPS dataset, clone the repository into `emps` folder : 
-`git clone https://github.com/by256/emps.git`
+To run the notebooks, we propose two alternatives, depending on your preferences. Setting up the environment may take some time depending on your particular configuration.
 
-## Jupyter notebook configuration 
+### Conda/Anaconda
 
-To install pip on windows environment : [pip installation](https://pip.pypa.io/en/stable/installation/)
+To use these notebooks with conda, launch the following commands within the anaconda prompt :
+1. create a new environment with the following command : 
+`conda env create --file aerosol_ia.yml`
+
+2. Then activate the environment : 
+`conda activate aerosol_ia`
+
+3. And launch jupyter :
+`jupyter lab`
+
+### Pip + Pipenv
+
+If you prefer to use pip and pipenv, you can follow these steps :
 
 1. Install pipenv : `pip install pipenv`
 1. Install the venv : `pipenv install` 
