@@ -9,6 +9,9 @@ backgroundColor: #fff
 
 An introduction
 
+
+![w:400](figures/insa.jpg) ![w:300](figures/litis.jpg) Supporté par NORMANTHIIA
+
 ---
 
 # Contents
@@ -452,7 +455,7 @@ Validation loss must decrease, then increase.
 
 Best model is the one with the lowest validation loss.![bg right fit](figures/valid_train.png)
 
-[[figure taken from F. Chollet]](https://www.manning.com/books/deep-learning-with-python)
+[[figure taken from F. Chollet] ](https://www.manning.com/books/deep-learning-with-python)
 
 --- 
 
