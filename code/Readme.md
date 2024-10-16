@@ -56,8 +56,7 @@ If you prefer to use pip and pipenv, you can follow these steps :
 If your local python configuration fails, you can run the [notebooks on colab](https://drive.google.com/drive/folders/1IbSBKymrI71-HVHzs5j9NkkAQ6qOmiB4?usp=sharing)
 
 ## Segmentation_Watershed.ipynb
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oPETP8ZGtK15MwJ8Id9dgUicQ4Ag_HXa?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11lgfZxdbgAsnCZ18Oaj-iduRAU7rTcr4?usp=sharing)
 
 This notebook provides an in-depth exploration of image segmentation using the Watershed algorithm. The notebook covers key concepts of the watershed technique, explains the preprocessing steps required for efficient segmentation, and includes practical examples of applying the algorithm to different types of images.
 
